@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/space-chat/static/css/main.53e9f3fc.css",
+    "main.js": "/space-chat/static/js/main.bdd862f4.js",
+    "static/js/787.7efd31bd.chunk.js": "/space-chat/static/js/787.7efd31bd.chunk.js",
+    "static/media/friends.png": "/space-chat/static/media/friends.e55bb498916e9ab23899.png",
+    "static/media/settings.png": "/space-chat/static/media/settings.adbed5e3bf6a3895385a.png",
+    "static/media/logout.png": "/space-chat/static/media/logout.bb20dfeee6d940b00c4e.png",
+    "static/media/logo.png": "/space-chat/static/media/logo.99cf35f20e34790b7f08.png",
+    "static/media/account.png": "/space-chat/static/media/account.170c94b28a548cfdb50b.png",
+    "static/media/search.png": "/space-chat/static/media/search.e19d93eb2a0a422ca670.png",
+    "static/media/send_arrow.png": "/space-chat/static/media/send_arrow.28350e1e87ff08d04cc6.png",
+    "static/media/theme.png": "/space-chat/static/media/theme.672cb6154f8011fcc1db.png",
+    "index.html": "/space-chat/index.html",
+    "main.53e9f3fc.css.map": "/space-chat/static/css/main.53e9f3fc.css.map",
+    "main.bdd862f4.js.map": "/space-chat/static/js/main.bdd862f4.js.map",
+    "787.7efd31bd.chunk.js.map": "/space-chat/static/js/787.7efd31bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53e9f3fc.css",
+    "static/js/main.bdd862f4.js"
+  ]
+}
