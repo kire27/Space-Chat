@@ -1,0 +1,112 @@
+.chatsPanelDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: var(--c2);
+    min-width: 100px;
+    height: auto;
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--c5);
+    margin: 10px;
+}
+
+.peopleSearchDiv {
+    width: 80%;
+    display: flex;
+    background-color: var(--c1);
+    border-radius: 33px;
+    height: 38px;
+
+}
+.searchInput {
+    width: 85%;
+    font-size: 17px;
+    padding: 8px;
+    border: none;
+    color: var(--white);
+    background-color: inherit;
+    border-radius: 33px;
+    outline: none;
+    box-sizing: border-box;
+} .searchInput::placeholder {
+    color: var(--c3);
+}
+.searchImg {
+    padding: 8px;
+    width: 20px;
+}
+
+
+.friendsPanelHr {
+    width: 90%;
+    background-color: var(--c1);
+    border: none;
+    height: 3px;
+    margin: 10px 0 10px 0;
+}
+
+
+.recentChatsLibrary {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    overflow-y: hidden;
+} .recentChatsLibrary::-webkit-scrollbar {
+    width: 10px;
+} .recentChatsLibrary::-webkit-scrollbar-track {
+    background: #1e1e24;
+} .recentChatsLibrary::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+.rcBlock {
+    width: 80%;
+    height: 60px;
+    margin-bottom: 8px;
+    background-color: var(--c1);
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+}
+.rcImage {
+    margin: auto;
+} .rcImage * {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    margin: 7px;
+    border-radius: 10px;
+}
+.rcText {
+    width: 100%;
+    overflow-x: scroll;
+} .rcText::-webkit-scrollbar {
+    display: none;
+}
+.textName {
+    color: var(--white);    
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2px;
+}
+.textMessage {
+    color: var(--c5);
+    font-size: 16px;
+}
+
+
+
+.miniMenu {
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    background-color: gray;
+}

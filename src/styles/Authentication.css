@@ -1,0 +1,129 @@
+
+.menuLayoutDiv {
+    min-width: 50%;
+    max-width: 70%;
+    height: auto;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+
+
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+.loginForm {
+    display: flex;
+    justify-content: space-evenly;
+}
+.loginDiv {
+    width: 50%;
+}
+.loginDiv * {
+    display: block;
+    justify-content: center;
+}
+.loginDiv #username, #email, 
+#password, #passwordAgain  {
+    box-sizing: border-box;
+    width: 100%;
+    height: 4vw;
+    padding: 1em;
+    margin: 0 0 0.2vw 0;
+    right: 100px;
+    border: none;
+    outline: none;
+    font-size: 1.6vw;
+}
+.loginWithEmail {
+    width: 100%;
+    height: 4vw;
+	border: none;
+	color: white;
+    background-color: #2c3544;
+	padding: 1vh 0 1vh 0;
+    text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 2vw;
+}
+.loginWithEmail:hover {
+    background-color: #3c465e;
+}
+.loginWithGoogle {
+    width: 100%;
+    height: 3vw;
+    border: none;
+    color: black;
+    background-color: #758db6;
+    padding: 0.5vh 0 0.5vh 0;
+    text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1.5vw;
+}
+.loginWithGoogle:hover {
+    background-color: #8daadc;
+}
+.signUpHeading {
+    width: 100%;
+    color: white;
+    margin-top: 1.5vw;
+    font-size: 1.15vw;
+    font-weight: normal;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.signUpSpan {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    margin-left: 0.4em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.loginLogoImg {
+    width: 20vw;
+    height: auto;
+    margin-left: 4vw;
+    object-fit: contain;
+}
+.loginImgInput {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border: none;
+    margin-left: 4vw;
+    text-decoration: none;
+    outline: none;
+    object-fit: contain;
+    font-size: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+.defaultUserImg {
+    position: relative;
+    z-index: 0;
+    width: 20vw;
+    height: 20vw;
+    margin-left: 4vw;
+    object-fit: cover;
+}
+
+@media(max-width: 800px) {
+    .loginLogoImg { 
+        display: none;
+    }
+    .loginForm {
+        justify-content: center;
+    }
+    .loginDiv {
+        width: 80%;
+    }
+}
