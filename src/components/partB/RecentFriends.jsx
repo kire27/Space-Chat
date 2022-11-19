@@ -20,10 +20,9 @@ center name if there is no text
 */
 
 const RecentFriends = (props) => {
-    const receiver = props.receiver;
-    const setReceiver = props.setReceiver;
+    const { receiver, setReceiver, entryValues } = props;
     
-    const { displayName, email, photoURL, uid } = props.entryValues;
+    const { displayName, email, photoURL, uid } = entryValues;
 
     const messagesRef = firestore.collection("Messages")
         .doc(auth.currentUser.uid).collection(uid?uid:"none");
@@ -32,46 +31,16 @@ const RecentFriends = (props) => {
 
     const text = lastMessage && lastMessage.map((msg) => msg.text);
 
-    const [miniMenu, setMiniMenu] = useState();
-    const [leftClick, setLeftClick] = useState(false);
-    const LeftClick = (e) => {
-        switch (e.button) {
-            case 0:
-                updateReceiver(uid, setReceiver);
-                setLeftClick(false); 
-                break;
-            case 2:
-                e.preventDefault();
-                setLeftClick(true);
-                setMiniMenu(e);
-                break;
-            default: return null;
-        }
-    }
-    console.log(leftClick);
+    const [closeKebab, setCloseKebab] = useState(false);
 
     return (
-        <>
-            {leftClick ?
-                <UserMiniMenu 
-                    e={miniMenu}
-                    receiver={props.entryValues}
-                    setReceiver={setReceiver}
-                    setLeftClick={setLeftClick} 
-                />
-                : 
-                null
-            }
-
-            <div className='rcBlock' 
-                onClick={(e) => LeftClick(e)}
-                onContextMenu={(e) => LeftClick(e)}
-            >            
+        <div className='rcBlock' onMouseLeave={(e) => setCloseKebab(false)}>
+            <div className="rcFlex">
                 <div className='rcImage'>
                     <img src={photoURL} alt="pfp" />
                 </div>
 
-                <div className='rcText'>
+                <div className='rcText' onClick={(e) => updateReceiver(uid, setReceiver)}>
                     <div className='textName'>
                     {displayName?displayName:email}
 
@@ -80,12 +49,62 @@ const RecentFriends = (props) => {
                         {text}
                     </div>
                 </div>
-            </div>  
-        </>     
+
+                <div className="rcMenu" onClick={(e) => setCloseKebab(true)}>
+                    <img
+                        className="rcKebabMenu"
+                        src={require("../../res/icons/kebab menu.png")} 
+                        alt="kebab menu" />
+                </div>
+            </div>
+            
+            { closeKebab ?
+                <UserKebabOptions closeKebab={closeKebab} setCloseKebab={setCloseKebab} />
+                :
+                null
+            }
+
+        </div>  
+           
     );
 }
 
 
+const UserKebabOptions = (props) => {
+    const { closeKebab, setCloseKebab } = props;
+    
+    return (
+        <div className="kebabContainer">
+            <hr className="kebabHr" />
+            <div className="kebabBox">
+                add friend
+            </div>
+
+            <div className="kebabBox">
+                remove friend
+            </div>
+
+            <hr className="kebabHr" />
+            <div className="kebabBox">
+                sdfasdf
+            </div>
+
+            <div className="kebabBox">
+                sdfasdf
+            </div>
+
+            <hr className="kebabHr" />
+            <div className="kebabBox">
+                sdfasdf
+            </div>
+
+            <div className="kebabBox">
+                sdfasdf
+            </div>
+
+        </div>
+    )
+}
 
 
 

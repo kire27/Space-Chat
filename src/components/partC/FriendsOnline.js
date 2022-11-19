@@ -25,29 +25,29 @@ function ChatIntroduce(props) {
 
     const latestUsers = LatestUsers(userMsg, users);
 
+    console.log(latestUsers);
     return (
-        <div className="chatMainDiv">
-            <div>
-                <span>Friends: </span>
+        <div className="friendsMainDiv">
+            <h2>Friends: </h2>
+
+            <div className="friendsFilterControls">
+                <input placeholder="type name" />
                 <button>online</button>
                 <button>all</button>
                 <button>pending</button>
                 <button>blocked</button>
             </div>
 
-            <div>
-                <input />
-            </div>
-
-            <div>
+            <div className="friendsList">
                 {true &&
-                    Object.entries(latestUsers).map(([key, value]) => (
-                        <RecentFriends
-                            entryValues={value}
-                            key={"ch" + key}
-                            receiver={receiver}
-                            setReceiver={setReceiver}
-                        />
+                    Object.entries(latestUsers).map(([key, value, array]) => (
+                        console.log(array)
+                        // <RecentFriends
+                        //     entryValues={value}
+                        //     key={"ch" + key}
+                        //     receiver={receiver}
+                        //     setReceiver={setReceiver}
+                        // />
                     ))}
             </div>
         </div>

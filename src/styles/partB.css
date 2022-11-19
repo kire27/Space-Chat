@@ -57,7 +57,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     color: white;
-    overflow-y: hidden;
+    overflow-y: scroll;
 } .recentChatsLibrary::-webkit-scrollbar {
     width: 10px;
 } .recentChatsLibrary::-webkit-scrollbar-track {
@@ -68,13 +68,27 @@ h2 {
 
 .rcBlock {
     width: 80%;
-    height: 60px;
-    margin-bottom: 8px;
+    height: auto;
+    margin-bottom: 7px;
     background-color: var(--c1);
     border-radius: 10px;
-    display: flex;
+    display: block;
     cursor: pointer;
 }
+.rcFlex {
+    display: flex;
+}
+.rcMenu {
+    display: flex;
+    flex-direction: row-reverse;
+} .rcKebabMenu {
+    height: 22px;
+    width: auto;
+    padding: 0 12px 0 12px;
+    margin: auto 0;
+    float: right;
+    opacity: 0.8;
+} 
 .rcImage {
     margin: auto;
 } .rcImage * {
@@ -102,11 +116,32 @@ h2 {
 }
 
 
-
-.miniMenu {
-    display: block;
-    position: absolute;
-    width: 180px;
-    height: 200px;
-    background-color: gray;
+.kebabContainer {
+    display: flexbox;
+    position: relative;
+    background-color: var(--c1);
+    cursor: auto;
+    border-radius: inherit;
+    margin-bottom: 7px;
+}
+.kebabBox {
+    position: relative;
+    display: flex;
+    background-color: none;
+    font-size: 13px;
+    font-weight: 500;
+    align-items: center;
+    margin: 0 7px ;
+    padding: 2px 0;
+    border: none;
+    height: 23px;
+    width: auto;
+} .kebabBox:hover {
+    background-color: var(--c3);
+}
+.kebabHr {
+    height: 1px;
+    border: none;
+    background-color: var(--c3);
+    margin: 0 7px 0 7px;
 }

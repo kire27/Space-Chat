@@ -8,10 +8,6 @@ import {
 
 
 
-
-
-
-
 // remake so output will update receiver hook throughout other components
 export const LatestUsers = (msgUserUids, usersData) => {
     // makes array of user's id

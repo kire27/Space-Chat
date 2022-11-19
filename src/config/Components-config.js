@@ -12,6 +12,5 @@ export { default as MenuPanel } from "../components/partA/MenuPanel";
 
 export { default as Friends } from "../components/partB/Friends";
 export { default as RecentFriends } from "../components/partB/RecentFriends";
-export { default as UserMiniMenu } from "../components/partB/UserMiniMenu";
 
 

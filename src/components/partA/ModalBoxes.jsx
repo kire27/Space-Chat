@@ -45,7 +45,7 @@ const FriendsModalBox = (props) => {
                 </div>
             </div>
             
-            <div className="modal" onClick={() => setModalBox(null)}></div>
+            <div className="modal" onClick={() => setModalBox(false)}></div>
         </div>
     );
 }
