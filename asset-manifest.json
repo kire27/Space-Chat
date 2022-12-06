@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Space-Chat/static/css/main.a4ed6c35.css",
-    "main.js": "/Space-Chat/static/js/main.64339ad5.js",
-    "static/js/787.7efd31bd.chunk.js": "/Space-Chat/static/js/787.7efd31bd.chunk.js",
-    "static/media/friends.png": "/Space-Chat/static/media/friends.e55bb498916e9ab23899.png",
-    "static/media/settings.png": "/Space-Chat/static/media/settings.adbed5e3bf6a3895385a.png",
-    "static/media/logout.png": "/Space-Chat/static/media/logout.bb20dfeee6d940b00c4e.png",
-    "static/media/logo.png": "/Space-Chat/static/media/logo.99cf35f20e34790b7f08.png",
-    "static/media/account.png": "/Space-Chat/static/media/account.170c94b28a548cfdb50b.png",
-    "static/media/search.png": "/Space-Chat/static/media/search.e19d93eb2a0a422ca670.png",
-    "static/media/send_arrow.png": "/Space-Chat/static/media/send_arrow.28350e1e87ff08d04cc6.png",
-    "static/media/theme.png": "/Space-Chat/static/media/theme.672cb6154f8011fcc1db.png",
-    "static/media/kebab menu.png": "/Space-Chat/static/media/kebab menu.eaae7f4b6f73649af141.png",
-    "index.html": "/Space-Chat/index.html",
-    "main.a4ed6c35.css.map": "/Space-Chat/static/css/main.a4ed6c35.css.map",
-    "main.64339ad5.js.map": "/Space-Chat/static/js/main.64339ad5.js.map",
-    "787.7efd31bd.chunk.js.map": "/Space-Chat/static/js/787.7efd31bd.chunk.js.map"
+    "main.css": "/static/css/main.a4ed6c35.css",
+    "main.js": "/static/js/main.bc74c721.js",
+    "static/js/787.7efd31bd.chunk.js": "/static/js/787.7efd31bd.chunk.js",
+    "static/media/friends.png": "/static/media/friends.e55bb498916e9ab23899.png",
+    "static/media/settings.png": "/static/media/settings.adbed5e3bf6a3895385a.png",
+    "static/media/logout.png": "/static/media/logout.bb20dfeee6d940b00c4e.png",
+    "static/media/logo.png": "/static/media/logo.99cf35f20e34790b7f08.png",
+    "static/media/account.png": "/static/media/account.170c94b28a548cfdb50b.png",
+    "static/media/search.png": "/static/media/search.e19d93eb2a0a422ca670.png",
+    "static/media/send_arrow.png": "/static/media/send_arrow.28350e1e87ff08d04cc6.png",
+    "static/media/theme.png": "/static/media/theme.672cb6154f8011fcc1db.png",
+    "static/media/kebab menu.png": "/static/media/kebab menu.eaae7f4b6f73649af141.png",
+    "index.html": "/index.html",
+    "main.a4ed6c35.css.map": "/static/css/main.a4ed6c35.css.map",
+    "main.bc74c721.js.map": "/static/js/main.bc74c721.js.map",
+    "787.7efd31bd.chunk.js.map": "/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a4ed6c35.css",
-    "static/js/main.64339ad5.js"
+    "static/js/main.bc74c721.js"
   ]
 }
